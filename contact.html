@@ -1,123 +1,260 @@
 <html>
-    <head>
-        <title>
-            Contact
-        </title>
-        <style>
-            /* div{
-                border: 2px solid green;
-            } */
-            #container{
-                width: 100%;
-                height: 500px;
-            }
-            #header{
-                width: 99.8%;
-                height: 40px;
-                background-attachment: fixed;
-                position: relative;
-                margin-top: 3%;
-                
-                /* margin-left: 20%; */
-               
-            }
-            #header ul{
-                list-style: none;
-            }
-            #header ul li{
-                float: left;
-                margin: 20px;
-            }
-            .orange{
-                color: orange;
-            }
-            .red{
-                color: red;
-            }
-            .blue{
-                color: blueviolet;
-            }
-            .green{
-                color: greenyellow;
-            }
-            #card{
-                width: 90%;
-                height: 400px;
-                margin: 2% 5%;
+
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+                width: 1500px;
+                height: 200vh;
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 0.7)), url('good4.jpg');
+                background-position: center;
+                background-size: cover;
+            /* background-attachment: fixed; */
+        }
+
+        .navbar {
+            width: 1500px;
+            height: 75px;
+            margin: auto;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            font-weight: 900;
+            font-size: large;
+        }
+
+        .logo {
+            width: 200px;
+            height: 70px;
+            float: left;
+        }
+
+        .icon {
+            color: #ba7200;
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 24px;
+        }
+
+        .menuu ul {
+            float: left;
+            display: flex;
+            margin-left: 200px;
+        }
+
+        .menuu ul li {
+            list-style: none;
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 17px;
+        }
+
+        .menuu ul li a {
+            text-decoration: none;
+            color: azure;
+            text-transform: capitalize;
+        }
+
+        .fnd {
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        .find a {
+            text-decoration: none;
+            color: azure;
+            text-transform: capitalize;
+            background-color: blue;
+            padding: 7px;
+        }
+
+        .find a:hover {
+            color: red;
+            background-color: rosybrown;
+        }
+
+        .find input {
+            padding: 5px 15px;
+        }
+        h1{
+            font-size: 60px;
+            margin: 4%;
+        }
+        p{
+            font-size: 14px;
+            margin: 4%;
+        }
+        .about{
+                width: 650px;
+                height: 350px;
+                border: none;
+                margin-top: 50px;
+                margin-left: 25px;
+                padding: 50px;
                 border-radius: 5px;
-            }
-            #one{
                 float: left;
-                width: 50%;
-                height: 400px;
-                background-color: #004;
-               
             }
-            #two{
-                float: right;
-                width: 50%;
-                height: 400px;
-                background-color: #222;
-                
-            }
-            #git{
-                width: 60%;
-                height: 200px;
-                margin: 20%;
-                border-left: 10px solid chartreuse;
-            }
-            #git ul{
-                font-size: 21px;
-                list-style: none;
-            }
-            #git h2{
-                font-size: 30px;
+            
+            .about h3{
+                padding: 10px;
+                color: red;
+                font-size:xx-large;
                 font-weight: 900;
             }
-            #card{
-                box-shadow: 0px 4px 8px 0px #001;
+            .about p{
+                color: #fff;
+                padding: 15px;
             }
-            #card:hover{
-                box-shadow: 0px 8px 16px 0px #000;
+            .about a{
+                text-decoration: none;
+                color: whitesmoke;
+                background-color: green;
+                padding: 10px 20px;
+                margin-left: 15px;
             }
-        </style>
-    </head>
-    <body text="#fff" bgcolor="#eee">
-        <div id="container">
-            <div id="header">
-                <h1 align="center"><span class="orange">CONTACT</span> <font color="#456">US</font></h1>
+            .form{
+                width: 440px;
+                height: 300px;
+                float: left;
+                
+                margin-top: 100px;
+                padding: 50px;
+                background-color: #fff;
+                font-weight: 500;
+
+            }
+            .form input{
+                width: 400px;
+                height: 30px;
+                margin: 20px;
+                border-bottom: 2px solid #111;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                background-color: #fff;
+            }
+            
+            .form a{
+                text-decoration: none;
+                color: blanchedalmond;
+                background-color: brown;
+                margin: 10px;
+                padding: 10px 25px;
+                margin-top: 100px;
+            }
+            #ram{
+                margin-top: 50px;
+            }
+            h2{
+                margin: 4%;
+            }
+            .sky{
+                color: aqua;
+            }
+            .white{
+                color: azure;
+            }
+            .about ul li, p{
+                float: none;
+                list-style: none;
+                font-size: 20px;
+            }
+            #one iframe{
+                margin-top: 30vh;
+            }
+
+    </style>
+</head>
+
+<body text="#fff">
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="icon"> AmritLabs</h1>
             </div>
-            <div id="card">
-                <div id="one">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.558993960147!2d86.13195522884433!3d22.806548811004454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4f942db25c5%3A0xe8f2e1fde7beeba!2sHatiyadih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1635736974272!5m2!1sen!2sin" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
-                </div>
-                <div id="two">
-                    <div id="git">
-                        <h2 align="center"><span class="red">GET</span><span class="green"> IN</span> TOUCH</h2>
-                        <ul>
-                            <li>
-                                <strong>
-                                    <span class="blue">Address: </span>
-                                </strong>
-                                    <i>C72 2nd Floor, R & D Field, Hatiyadih, Jharkhand</i>
-                            </li>
-                            <li>
-                                <strong>
-                                    <span class="blue">Email ID: </span>
-                                </strong>
-                                    <i>randdpublic@rediffmail.com</i>
-                            </li>
-                            <li>
-                                <strong>
-                                    <span class="blue">Phone No.: </span>
-                                </strong>
-                                    <i>+91 6205921144</i>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
+            <div class="menuu">
+                <ul>
+                    <li>
+                        <a href="raj.html">home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about us</a>
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li>
+                        <a href="#">achievements</a>
+                    </li>
+                    <li>
+                        <a href="#">testinomials</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="find">
+                <input class="fnd" type="search" placeholder="searching...." name="search">
+                <a href="#">search</a>
             </div>
         </div>
-    </body>
+        <!-- <img src="images.jpg" width="100%"/> -->
+        <h1 align="center">
+            Contacts
+        </h1>
+        <p align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque aut, praesentium fugiat at dolor obcaecati ex culpa magni quaerat hic consectetur consequuntur id, voluptates natus dolores tenetur reiciendis totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium et maiores suscipit labore magni neque mollitia exercitationem, atque nam nobis aliquid incidunt odio modi distinctio, deserunt cum ex nesciunt?</p>
+        <div class="about">
+            <ul>
+                <li>
+                    <strong>
+                        <span class="sky">
+                            Address:
+                            <p>123 Main Street, New York, NY 10030</p>
+                        </span>
+                    </strong>
+                </li>
+                <li>
+                    <strong>
+                        <span class="sky">
+                            Phone:
+                            <p>12310030</p>
+                        </span>
+                    </strong>
+                </li>
+                <li>
+                    <strong>
+                        <span class="sky">
+                            Email:
+                            <p>csjgdkuse123@gmail.com</p>
+                        </span>
+                    </strong>
+                </li>
+            </ul>
+        </div>
+        <div class="form">
+            <h2>
+                <font color="blue">
+                    Send  Message
+                </font>
+            </h2>
+            <input type="text" placeholder="Fullname">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Type your Message">
+            <br><br>
+            <a href="#">Send</a>
+            
+         </div>
+         <div id="one">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.558993960147!2d86.13195522884433!3d22.806548811004454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4f942db25c5%3A0xe8f2e1fde7beeba!2sHatiyadih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1635736974272!5m2!1sen!2sin" width="1500px" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+        </div>
+    </div>
+</body>
+
 </html>
