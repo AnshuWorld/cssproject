@@ -100,10 +100,14 @@
             padding: 100px;
             box-shadow: 0 4px 8px 0 #000;
         }
-        .box:hover{
+
+        .box:hover {
+            width: 425px;
+            height: 425px;
             box-shadow: 0 8px 16px 0 #000;
             background-color: red;
             color: whitesmoke;
+            transition: 1s;
         }
 
         h1 {
@@ -118,6 +122,82 @@
 
         p {
             margin: 4%;
+        }
+
+        /* Created by Celestine~00 */
+
+        * {
+            font-family: Poppins;
+            margin: 0;
+            padding: 0;
+            /* border: 2px solid white; */
+        }
+
+        body {
+            background-color: #334756;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 30px 60px rgba(0, 0, 0, .5);
+            width: 270px;
+            height: 400px;
+            padding: 15px 10px;
+            background-color: #33475b;
+            color: white;
+            
+            margin: 35px;
+            float: left;
+        }
+        .container:hover{
+            width: 330px;
+            height: 440px;
+            
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin: 5px auto;
+            font-size: 20px;
+        }
+
+        p {
+            font-weight: light;
+            font-size: 12px;
+            margin: 7px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: light;
+            font-size: 13px;
+            color: #ff4c29;
+        }
+
+        img {
+            border-radius: 55% 0%;
+            border: 2px solid #ff4c29;
+            width: 120px;
+            padding: 4px;
+            margin-bottom: 30px;
+        }
+
+        #service a {
+            text-decoration: none;
+            border: none;
+            padding: 10px 20px;
+            color: whitesmoke;
+            background-color: orange;
+            float: left;
         }
     </style>
 </head>
@@ -137,7 +217,7 @@
                         <a href="about.html">about us</a>
                     </li>
                     <li>
-                        <a href="service.html">services</a>
+                        <a href="#">services</a>
                     </li>
                     <li>
                         <a href="#">achievements</a>
@@ -156,31 +236,45 @@
             </div>
         </div>
         <h1 align="center">
-            Services
+            <font color="#fff" size="40px">
+                We Provide Services
+            </font>
         </h1>
-        <div class="box">
-            <h3 align="center">Corporate Business</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
+        <div class="container">
+            <div class="service">   
+                <h1>Pathological Testing</h1>
+                <h3>Lab Number 101</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione eos necessitatibus quis similique recusandae dolor magni, error architecto libero, quasi deleniti molestias deserunt officiis numquam, aliquam fugit sapiente ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laboriosam sunt voluptates doloribus ea unde voluptatum, quia magni fugit non exercitationem error. Eum iure esse rem cupiditate, corporis optio quos?
+                </p>
+            </div>
         </div>
-        <div class="box">
-            <h3 align="center">Research Department</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
+        <div class="container">
+            <div class="service">   
+                <h1>Medicines & Vaccine</h1>
+                <h3>Lab Number 102</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione eos necessitatibus quis similique recusandae dolor magni, error architecto libero, quasi deleniti molestias deserunt officiis numquam, aliquam fugit sapiente ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laboriosam sunt voluptates doloribus ea unde voluptatum, quia magni fugit non exercitationem error. Eum iure esse rem cupiditate, corporis optio quos?
+                </p>
+            </div>
         </div>
-        <div class="box">
-            <h3 align="center">Call Center Service</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
+        <div class="container">
+            <div class="service">   
+                <h1>Biological Research</h1>
+                <h3>Lab Number 103</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione eos necessitatibus quis similique recusandae dolor magni, error architecto libero, quasi deleniti molestias deserunt officiis numquam, aliquam fugit sapiente ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laboriosam sunt voluptates doloribus ea unde voluptatum, quia magni fugit non exercitationem error. Eum iure esse rem cupiditate, corporis optio quos?
+                </p>
+            </div>
         </div>
-        <div class="box">
-            <h3 align="center">Social Media Marketing</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
-        </div>
-        <div class="box">
-            <h3 align="center">IT & Robotics</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
-        </div>
-        <div class="box">
-            <h3 align="center">Agricultural Development</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus sequi molestiae libero aspernatur corporis cumque sed est, ab doloribus animi quis? Perspiciatis aut commodi omnis eos porro, minus ipsa.</p>
+        <div class="container">
+            <div class="service">   
+                <h1>Robotics & IT</h1>
+                <h3>Lab Number 104</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione eos necessitatibus quis similique recusandae dolor magni, error architecto libero, quasi deleniti molestias deserunt officiis numquam, aliquam fugit sapiente ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laboriosam sunt voluptates doloribus ea unde voluptatum, quia magni fugit non exercitationem error. Eum iure esse rem cupiditate, corporis optio quos?
+                </p>
+            </div>
         </div>
     </div>
 </body>
