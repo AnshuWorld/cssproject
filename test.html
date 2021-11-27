@@ -1,0 +1,392 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 70vh;
+            
+            /* background-attachment: fixed; */
+        }
+
+        .navbar {
+            width: 100%;
+            height: 75px;
+            margin: auto;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            font-weight: 900;
+            font-size: large;
+        }
+
+        .logo {
+            width: 200px;
+            height: 70px;
+            float: left;
+        }
+
+        .icon {
+            color: #ba7200;
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 24px;
+        }
+
+        .menuu ul {
+            float: left;
+            display: flex;
+            margin-left: 200px;
+        }
+
+        .menuu ul li {
+            list-style: none;
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 17px;
+        }
+
+        .menuu ul li a {
+            text-decoration: none;
+            color: azure;
+            text-transform: capitalize;
+        }
+
+        .fnd {
+            margin-left: 52px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        .find a {
+            text-decoration: none;
+            color: azure;
+            text-transform: capitalize;
+            background-color: blue;
+            padding: 7px;
+        }
+
+        .find a:hover {
+            color: red;
+            background-color: rosybrown;
+        }
+
+        .find input {
+            padding: 5px 15px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 4%;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 4%;
+        }
+
+        .about {
+            width: 650px;
+            height: 350px;
+            border: none;
+            margin-top: 50px;
+            margin-left: 25px;
+            padding: 50px;
+            border-radius: 5px;
+            float: left;
+        }
+
+        .about h3 {
+            padding: 10px;
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        .about p {
+            color: #fff;
+            padding: 15px;
+        }
+
+        .about a {
+            text-decoration: none;
+            color: whitesmoke;
+            background-color: green;
+            padding: 10px 20px;
+            margin-left: 15px;
+        }
+
+        .form {
+            width: 440px;
+            height: 300px;
+            float: left;
+
+            margin-top: 100px;
+            padding: 50px;
+            background-color: #fff;
+            font-weight: 500;
+
+        }
+
+        .form input {
+            width: 400px;
+            height: 30px;
+            margin: 20px;
+            border-bottom: 2px solid #111;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: #fff;
+        }
+
+        .form a {
+            text-decoration: none;
+            color: blanchedalmond;
+            background-color: brown;
+            margin: 10px;
+            padding: 10px 25px;
+            margin-top: 100px;
+        }
+
+        #ram {
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin: 4%;
+        }
+
+        .sky {
+            color: aqua;
+        }
+
+        .white {
+            color: azure;
+        }
+
+        .about ul li,
+        p {
+            float: none;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #one iframe {
+            margin-top: 7vh;
+            float: left;
+            box-shadow: 0px 30px 60px rgba(255, 255, 255, .5);
+        }
+
+        body {
+            background-color: #334756;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 30px 60px rgba(255, 255, 255, .5);
+            width: 370px;
+            height: 500px;
+            padding: 15px 10px;
+            background-color: #33475b;
+            color: white;
+
+            margin: 50px;
+            float: left;
+        }
+
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10%;
+        }
+
+        .service h1 {
+            margin-top: 13%;
+        }
+
+        h1 {
+            margin: 5px auto;
+            font-size: 23px;
+        }
+
+        p {
+            font-weight: light;
+            font-size: 17px;
+            margin: 7px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: light;
+            font-size: 19px;
+            color: #ff4c29;
+        }
+
+
+        #service a {
+            text-decoration: none;
+            border: none;
+            padding: 10px 20px;
+            color: whitesmoke;
+            background-color: orange;
+            float: left;
+        }
+
+
+        i {
+            color: #0f97f9;
+        }
+
+        h2 {
+            color: #4a90e2;
+            line-height: 5px;
+            font-family: 'PT Mono', monospace;
+        }
+
+        h5 {
+            color: #aaa;
+            font-family: 'PT Mono', monospace;
+        }
+
+        #lastName {
+            color: orange;
+        }
+
+        #title {
+            line-height: 15px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 6px;
+        }
+        .profileCard {
+            max-width: 20%;
+            height: 400px;
+            background: #111;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 50px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+            float: left;
+        }
+        .profileCard:hover{
+            background-color: antiquewhite;
+            color: blue;
+        }
+
+        .profileHead {
+            padding-top: 90px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        
+        .profileBody {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        
+        .profileBody p {
+            color: #aaa;
+            line-height: 5px;
+        }
+
+        
+
+        
+
+    
+        h1{
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body text="#fff">
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="icon"> AmritLabs</h1>
+            </div>
+            <div class="menuu">
+                <ul>
+                    <li>
+                        <a href="raj.html">home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about us</a>
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li>
+                        <a href="#">achievements</a>
+                    </li>
+                    <li>
+                        <a href="#">testinomials</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="find">
+                <input class="fnd" type="search" placeholder="searching...." name="search">
+                <a href="#">search</a>
+            </div>
+        </div>
+        <h1>What Our Customer Says</h1>
+    <div class="cardContainer">
+        <div class="profileCard">
+            <div class="profileHead">
+                <h2>Abhishek <span id="lastName">Gupta</span></h2>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit laudantium alias eius nemo voluptatum aliquam dolor placeat provident eveniet, nostrum porro deleniti ut rerum aspernatur numquam expedita dolores non.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cardContainer">
+        <div class="profileCard">
+            <div class="profileHead">
+                <h2>Abhishek <span id="lastName">Gupta</span></h2>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit laudantium alias eius nemo voluptatum aliquam dolor placeat provident eveniet, nostrum porro deleniti ut rerum aspernatur numquam expedita dolores non.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cardContainer">
+        <div class="profileCard">
+            <div class="profileHead">
+                <h2>Abhishek <span id="lastName">Gupta</span></h2>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit laudantium alias eius nemo voluptatum aliquam dolor placeat provident eveniet, nostrum porro deleniti ut rerum aspernatur numquam expedita dolores non.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cardContainer">
+        <div class="profileCard">
+            <div class="profileHead">
+                <h2>Abhishek <span id="lastName">Gupta</span></h2>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit laudantium alias eius nemo voluptatum aliquam dolor placeat provident eveniet, nostrum porro deleniti ut rerum aspernatur numquam expedita dolores non.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+        <!-- <img src="images.jpg" width="100%"/> -->
+    </div>
+    
+</body>
+
+</html>
